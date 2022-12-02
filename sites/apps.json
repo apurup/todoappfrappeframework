@@ -1,0 +1,21 @@
+{
+    "frappe": {
+        "resolution": {
+            "commit_hash": null,
+            "branch": null
+        },
+        "required": [],
+        "idx": 1,
+        "version": "14.0.0-dev"
+    },
+    "todoapp": {
+        "is_repo": true,
+        "resolution": {
+            "commit_hash": "2e424254e16024f1e31bed0da4ccc3a09f9f1777",
+            "branch": "master"
+        },
+        "required": [],
+        "idx": 2,
+        "version": "0.0.1"
+    }
+}

@@ -1,0 +1,30 @@
+2022-11-26 17:08:51,763 ERROR scheduler Exception in Enqueue Events for Site todomanager
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 71, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "apps/frappe/frappe/utils/scheduler.py", line 108, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "apps/frappe/frappe/utils/scheduler.py", line 120, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "apps/frappe/frappe/database/database.py", line 736, in get_single_value
+    df = frappe.get_meta(doctype).get_field(fieldname)
+  File "apps/frappe/frappe/__init__.py", line 1202, in get_meta
+    return frappe.model.meta.get_meta(doctype, cached=cached)
+  File "apps/frappe/frappe/model/meta.py", line 65, in get_meta
+    meta = Meta(doctype)
+  File "apps/frappe/frappe/model/meta.py", line 123, in __init__
+    super().__init__("DocType", doctype)
+  File "apps/frappe/frappe/model/document.py", line 106, in __init__
+    self.load_from_db()
+  File "apps/frappe/frappe/model/meta.py", line 129, in load_from_db
+    super().load_from_db()
+  File "apps/frappe/frappe/model/document.py", line 158, in load_from_db
+    frappe.throw(
+  File "apps/frappe/frappe/__init__.py", line 521, in throw
+    msgprint(
+  File "apps/frappe/frappe/__init__.py", line 489, in msgprint
+    _raise_exception()
+  File "apps/frappe/frappe/__init__.py", line 441, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.DoesNotExistError: DocType System Settings not found
+

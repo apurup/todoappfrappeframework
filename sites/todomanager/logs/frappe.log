@@ -1,0 +1,6 @@
+2022-12-02 12:07:24,542 ERROR frappe New Exception collected with id: 2022-12-02 12:07:24.064438-127.0.0.1-546
+Site: todomanager
+Form Dict: {'user': 'manager@test.com', 'cmd': 'frappe.core.doctype.user.user.reset_password'}
+2022-12-02 12:07:41,875 ERROR frappe New Exception collected with id: 2022-12-02 12:07:41.853158-127.0.0.1-900
+Site: todomanager
+Form Dict: {'user': 'manager@test.com', 'cmd': 'frappe.core.doctype.user.user.reset_password'}
